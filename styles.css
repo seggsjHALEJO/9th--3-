@@ -1,0 +1,114 @@
+body {
+    font-family: mainFont;
+    background-color: #FFCDD2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: #CB997E;
+    color: white;
+    padding: 15px;
+    font-size: 28px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    margin: 10px;
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+#audioPlayer {
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid #4CAF50;
+    background-color: white;
+}
+
+#textSection {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ... your existing CSS code ... */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    max-width: 80%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    height: 400px;
+    overflow-y: auto;
+}
+
+
+.close {
+    position: absolute;
+    top: 20px; /* Adjust the top position as needed */
+    right: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+@font-face {
+    font-family: mainFont;
+    src: url(Jojoba.otf);
+}
